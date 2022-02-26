@@ -1,0 +1,213 @@
+/*======================================================
+ *  common css area start
+ *======================================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 2rem;
+}
+:root {
+  --color-black-4d4e53: #4d4e53;
+  --color-gray-f7f7f7: #f7f7f7;
+  --color-white: #ffffff;
+  --color-green-04AA6D: #04aa6d;
+  --color-green-049761: #049761;
+  --color-green-E7E9EB: #e7e9eb;
+}
+body {
+  color: var(--color-black-4d4e53);
+}
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  background-color: var(--color-green-E7E9EB);
+  padding: 1rem;
+  border-radius: 0 0.3125rem 0.3125rem 0;
+  border-left: 0.25rem solid var(--color-green-04AA6D);
+}
+
+/*======================================================
+ *  go to top btn start here
+ *======================================================*/
+
+.hidden {
+  display: none;
+}
+.back-to-top {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: fixed;
+  right: 2.5rem;
+  bottom: 5.5rem;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+  opacity: 100%;
+  transition: opacity 0.5s;
+}
+.back-to-top i {
+  width: 100%;
+  height: 100%;
+  font-size: 2.5rem;
+  color: var(--color-green-04AA6D);
+}
+.back-to-top i:hover {
+  color: var(--color-green-049761);
+  transition: opacity 0.5s;
+}
+
+/*======================================================
+ *  main area start
+ *======================================================*/
+
+main.main-area {
+  position: absolute;
+  margin-left: 20rem;
+}
+.main-area-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*======================================================
+ *  main left side area start
+ *======================================================*/
+
+nav.nav-area header {
+  font-size: 1.625rem;
+  padding: 1.5rem 0.5rem;
+  color: var(--color-white);
+  background: var(--color-green-049761);
+}
+nav.nav-area {
+  width: 20rem;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  border-right: solid;
+  border-color: var(--color-green-04AA6D);
+}
+.nav-area li {
+  color: #4d4e53;
+  border-top: 1px solid var(--color-green-04AA6D);
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+.nav-link-item {
+  display: block;
+  padding: 0.5rem 2rem 0.75rem 2rem;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.125rem;
+}
+
+/*======================================================
+ *  main right side area start
+ *======================================================*/
+
+footer.footer-area,
+header.header-area {
+  font-size: 2.5rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-white);
+  background: var(--color-green-04AA6D);
+}
+main.main-right-side-area-wrapper {
+  max-width: 100rem;
+  width: auto;
+}
+header.right-side-title {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+article.article-item {
+  padding-left: 1.25rem;
+}
+section.right-side-item {
+  margin: 2.5rem;
+}
+article.article-item ul {
+  padding-left: 2.5rem;
+  margin: 1rem 0;
+}
+article.article-item li {
+  margin: 1rem 0 0 1.25rem;
+}
+article.article-item p {
+  margin: 1rem 0;
+}
+
+/*======================================================
+ *  footer area start
+ *======================================================*/
+
+footer.footer-area {
+  font-size: 1.125rem;
+  letter-spacing: 0.0625rem;
+  text-transform: capitalize;
+  word-spacing: 0.125rem;
+  padding: 1rem;
+}
+footer.footer-area a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+/*======================================================
+ *  responsive css area start
+ *======================================================*/
+
+@media only screen and (max-width: 50rem) {
+  main.main-area {
+    margin-left: 0rem;
+  }
+  section.main-left-side-area-wrapper {
+    width: auto;
+  }
+  nav.nav-area {
+    background-color: var(--color-white);
+    position: absolute;
+    top: 5rem;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 30vh;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid var(--color-green-04AA6D);
+  }
+  nav.nav-area ul {
+    border: 1px solid;
+    height: 20.8vh;
+    overflow-x: hidden;
+    border-color: var(--color-green-04AA6D);
+    scroll-behavior: smooth;
+  }
+  header.header-area {
+    margin-bottom: 21.25rem;
+  }
+  main.main-right-side-area-wrapper {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 100%;
+  }
+}
+
+/*======================================================
+ *===================  End Of CSS  =====================
+ *======================================================*/
